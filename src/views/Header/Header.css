@@ -1,0 +1,16 @@
+:root{
+    --global-font-size:16px;
+    --primary-color:"#fff";
+}
+
+body{
+    font-size: var(--global-font-size);
+}
+.primary-button{
+    color: var(--primary-color);
+}
+.secondary-btn{
+    color:var(--primary-color);
+}
+
+
