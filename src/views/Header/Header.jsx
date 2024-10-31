@@ -9,9 +9,9 @@ export default function Header() {
       <div
         className="backgroundColor  z-10"
         style={{
-          backgroundColor: "#3e4073",
+          backgroundColor: "#586f7c",
           position: "sticky",
-          top: "0"
+          top: "0",
         }}
       >
         <Container>
@@ -21,16 +21,22 @@ export default function Header() {
             </div>
             <div>
               <ul className="d-flex justify-content-between">
-                <li className="nav-text">
-                  <Link to="/">Home</Link>
+                <li className="custom-list ">
+                  <Link to="/" className="nav-text ">
+                    Home
+                  </Link>
                 </li>
-                <li className="nav-text">
+                <li className=" custom-list ">
                   {" "}
-                  <Link to="/about">About</Link>{" "}
+                  <Link to="/about" className="nav-text ">
+                    About
+                  </Link>{" "}
                 </li>
-                <li className="nav-text">
+                <li className=" custom-list ">
                   {" "}
-                  <Link to="/contact">contact</Link>{" "}
+                  <Link to="/contact" className="nav-text ">
+                    contact
+                  </Link>{" "}
                 </li>
               </ul>
             </div>
