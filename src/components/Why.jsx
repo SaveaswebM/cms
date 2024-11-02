@@ -11,19 +11,29 @@ function Why() {
       <div className="why-bg-color container-top-space">
         <Container>
           <Row>
-            <Col className="position-relative">
+            <Col
+              lg={6}
+              md={12}
+              className="position-relative d-flex justify-content-center z-0"
+            >
               <div className="mask-img"></div>
+              <div className="shape">
+                <Image
+                  src="https://cfosupport.in/assets/img/images/about_shape01.png"
+                  alt="background shape"
+                />
+              </div>
             </Col>
-            <Col>
+            <Col lg={6} md={12}>
               <div>
-                <h1>cfo support</h1>
-                <h6 className="text-space">
+                <h1 className="text-uppercase">cfo support</h1>
+                <h4 className="text-space">
                   Driving success virtually and seamlessly
-                </h6>
-                <ul>
+                </h4>
+                <ul className="pl-0">
                   <li className="custom-list ">
                     <Row>
-                      <Col xl={3}>
+                      <Col xl={2}>
                         {" "}
                         <div>
                           <FontAwesomeIcon
@@ -48,7 +58,7 @@ function Why() {
                   </li>
                   <li className="custom-list ">
                     <Row>
-                      <Col xl={3}>
+                      <Col xl={2}>
                         {" "}
                         <div>
                           <FontAwesomeIcon
@@ -73,7 +83,7 @@ function Why() {
                   </li>
                   <li className="custom-list ">
                     <Row>
-                      <Col xl={3}>
+                      <Col xl={2}>
                         {" "}
                         <div>
                           <FontAwesomeIcon
@@ -98,7 +108,7 @@ function Why() {
                   </li>
                   <li className="custom-list ">
                     <Row>
-                      <Col xl={3}>
+                      <Col xl={2}>
                         {" "}
                         <div>
                           <FontAwesomeIcon
