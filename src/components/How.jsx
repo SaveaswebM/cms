@@ -7,7 +7,7 @@ import Cards from "./Cards";
 function How() {
   return (
     <>
-      <Container className="text-center container-y-space ">
+      <div className="text-center container-y-space ">
         <div>
           <h1>HOW DO WE SUPPORT</h1>
           <h4>
@@ -15,22 +15,26 @@ function How() {
           </h4>
         </div>
         <div className="mt-5">
-          <Row>
-            <Col>
-              <Cards title="card1" />
+          <Row className="px-4">
+            <Col className="padding-card">
+              <Cards title="card1" text="Some quick example text to build on the card title and make up the
+            bulk of the card's content." />
             </Col>
-            <Col>
-              <Cards title="card2" />
+            <Col className="padding-card">
+              <Cards title="card2" text="Some quick example text to build on the card title and make up the
+            bulk of the card's content." />
             </Col>
-            <Col>
-              <Cards title="card3" />
+            <Col className="padding-card">
+              <Cards title="card3" text="Some quick example text to build on the card title and make up the
+            bulk of the card's content." />
             </Col>
-            <Col>
-              <Cards title="card4" />
+            <Col className="padding-card">
+              <Cards title="card4" text="Some quick example text to build on the card title and make up the
+            bulk of the card's content." />
             </Col>
           </Row>
         </div>
-      </Container>
+      </div>
     </>
   );
 }
