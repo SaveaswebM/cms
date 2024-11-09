@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Why from "../components/Why";
 import How from "../components/How";
 import Service from "../components/Service";
+import Services from "../components/Services";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Why />
       <How />
       <Service />
+      <Services />
     </>
   );
 }

@@ -5,6 +5,7 @@ import Home from "./views/Home";
 import About from "./views/About";
 import Contact from "./views/Contact";
 import Header from "./views/Header/Header";
+import Footer from "./views/Footer/Footer";
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
