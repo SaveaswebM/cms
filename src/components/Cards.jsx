@@ -4,10 +4,10 @@ import Card from "react-bootstrap/Card";
 function Cards(props) {
   return (
     <>
-      <Card style={{ }}>
+      <Card style={{}}>
         <video
           autoPlay
-          src="https://cdnl.iconscout.com/lottie/premium/thumb/business-training-7245756-5901367.mp4"
+          src={props.url}
           loop
           muted
           type="video/mp4"

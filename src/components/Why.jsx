@@ -4,9 +4,10 @@ import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/esm/Image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faBagShopping } from "@fortawesome/free-solid-svg-icons";
 function Why() {
   const [data, setData] = useState([]);
+  const [listData, setListData] = useState([]);
 
   useEffect(() => {
     async function getApiData() {
@@ -15,11 +16,12 @@ function Why() {
         const data = await response.json();
         // console.log("api data", data);
         setData(data.data[0]);
+        setListData(data.data[0].list);
       }
     }
     getApiData();
   }, []);
-  console.log("list", data.list);
+  // console.log("list", data.list);
   return (
     <>
       <div className="why-bg-color container-top-space">
@@ -46,7 +48,7 @@ function Why() {
                 <h1 className="text-uppercase">{data.title}</h1>
                 <h4 className="text-space">{data.subTitle}</h4>
                 <ul className="pl-0">
-                  {data.list.map((item) => {
+                  {listData.map((item) => {
                     return (
                       <li className="custom-list ">
                         <Row>
@@ -64,11 +66,8 @@ function Why() {
                           <Col xl={9}>
                             {" "}
                             <div>
-                              <h6>PROFESSIONAL ADVICE</h6>
-                              <p>
-                                Expert CFO guidance, without the high cost.
-                                Partnering for business success
-                              </p>
+                              <h6>{item.listHeading}</h6>
+                              <p>{item.listDesc}</p>
                             </div>
                           </Col>
                         </Row>
